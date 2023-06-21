@@ -1,45 +1,35 @@
-#--------------------------#
-# Magento Default Files    #
-#--------------------------#
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-/PATCH_*.sh
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
 
-/app/etc/local.xml
+# testing
+/coverage
 
-/media/*
-!/media/.htaccess
+# next.js
+/.next/
+/out/
 
-!/media/customer
-/media/customer/*
-!/media/customer/.htaccess
+# production
+/build
 
-!/media/dhl
-/media/dhl/*
-!/media/dhl/logo.jpg
+# misc
+.DS_Store
+*.pem
 
-!/media/downloadable
-/media/downloadable/*
-!/media/downloadable/.htaccess
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-!/media/xmlconnect
-/media/xmlconnect/*
+# local env files
+.env*.local
 
-!/media/xmlconnect/custom
-/media/xmlconnect/custom/*
-!/media/xmlconnect/custom/ok.gif
+# vercel
+.vercel
 
-!/media/xmlconnect/original
-/media/xmlconnect/original/*
-!/media/xmlconnect/original/ok.gif
-
-!/media/xmlconnect/system
-/media/xmlconnect/system/*
-!/media/xmlconnect/system/ok.gif
-
-/var/*
-!/var/.htaccess
-
-!/var/package
-/var/package/*
-!/var/package/*.xml
-
+# typescript
+*.tsbuildinfo
+next-env.d.ts
