@@ -8,8 +8,8 @@ export default async function Home() {
  
   return (
     <main>
-    <Navbar session={session.user} ></Navbar>
-    <Sidebar for_indox_session = {session.user}></Sidebar>
+  
+    <Sidebar session = {session.user}></Sidebar>
     </main>
   )
 }
