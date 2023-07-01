@@ -16,7 +16,7 @@ export const authOptions = NextAuth({
         password: { label: "Password", type: "password" },
       },
       async authorize(credentials) {
-        const res = await fetch("/api/login", {
+        const res = await fetch("https://www.thearyansingh.me/api/login", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
