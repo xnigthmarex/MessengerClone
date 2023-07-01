@@ -11,10 +11,13 @@ export const authOptions = NextAuth({
         username: {
           label: "Username",
           type: "text",
-          placeholder: "username Aryan",
+          placeholder: "username aryan",
         },
         password: { label: "Password", type: "password" },
       },
+
+
+
       async authorize(credentials) {
         const res = await fetch("https://www.thearyansingh.me/api/login", {
           method: "POST",
