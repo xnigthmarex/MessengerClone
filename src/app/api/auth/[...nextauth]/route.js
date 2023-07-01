@@ -47,5 +47,8 @@ export const authOptions = NextAuth({
       return session;
     },
   },
+ pages:{
+    signIn:"/auth/signin"
+ }
 });
 export { authOptions as GET, authOptions as POST };
