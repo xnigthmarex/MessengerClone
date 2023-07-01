@@ -19,9 +19,9 @@ export const authOptions = NextAuth({
 
 
 
-      
+
       async authorize(credentials) {
-        const res = await fetch("http:/localhost:3000/api/login", {
+        const res = await fetch("https://www.thearyansingh.me/api/login", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
